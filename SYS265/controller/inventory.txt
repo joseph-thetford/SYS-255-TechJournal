@@ -1,0 +1,12 @@
+[OMERO]
+ansible01-joe
+[webmin]
+ansible02-joe
+[windows]
+mgmt01-joe
+[windows:vars]
+ansible_user=joe.thetford-adm@joe.local
+ansible_connection=winrm
+ansible_winrm_server_cert_validation=ignore
+ansible_winrm_transport=ntlm
+ansible_winrm_port=5986
