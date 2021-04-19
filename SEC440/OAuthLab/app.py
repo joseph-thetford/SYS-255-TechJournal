@@ -6,6 +6,7 @@ import json
 
 app = Flask(__name__)
 
+#Import creds from txt file
 credfile = open('creds.txt','r')
 client_id = credfile.readline()[0:-1]
 client_secret = credfile.readline()[0:-1]
